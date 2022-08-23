@@ -6875,7 +6875,7 @@ textarea.form-control {
 }
 
 .heading-section.heading-section-white .subheading {
-    color: #fff;
+    color: gold;
 }
 
 .heading-section.heading-section-white h2,
@@ -7223,8 +7223,8 @@ textarea.form-control {
 
 .staff:hover .text,
 .staff:focus .text {
-    background: goldenrod;
-    color: rgba(255, 255, 255, 0.8);
+    background: gold;
+    color: white;
 }
 
 .staff:hover .text h3,
