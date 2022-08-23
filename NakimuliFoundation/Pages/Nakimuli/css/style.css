@@ -1,10 +1,4 @@
 @charset "UTF-8";
-/*!
-Animate.css - http://daneden.me/animate
-Licensed under the MIT license - http://opensource.org/licenses/MIT
-
-Copyright (c) 2015 Daniel Eden
-*/
 
 @-webkit-keyframes bounce {
     from,
@@ -4098,6 +4092,7 @@ progress {
     line-height: 1.5;
     color: #212529;
     background-color: #fff;
+    -webkit-background-clip: padding-box;
     background-clip: padding-box;
     border: 1px solid #ced4da;
     -webkit-appearance: none;
@@ -5566,8 +5561,8 @@ textarea.form-control {
 
 body {
     font-family: "Poppins", Arial, sans-serif;
-    background: #f3f0eb;
-    font-size: 16px;
+    background: goldenrod;
+    font-size: 19px;
     line-height: 1.8;
     font-weight: 400;
     overflow-x: hidden;
@@ -5579,7 +5574,7 @@ button {
     -webkit-transition: .3s all ease;
     -o-transition: .3s all ease;
     transition: .3s all ease;
-    color: #d49a3a;
+    color: gold;
     text-decoration: none;
 }
 
@@ -5588,7 +5583,7 @@ a:focus,
 button:hover,
 button:focus {
     text-decoration: none;
-    color: #d49a3a;
+    color: gold;
     outline: none !important;
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
@@ -5628,7 +5623,7 @@ h5,
 
 @media (max-width: 991.98px) {
     .ftco-navbar-light {
-        background: #282214 !important;
+        background: none !important;
         top: 0;
     }
 }
@@ -5647,6 +5642,8 @@ h5,
 @media (max-width: 767.98px) {
     .ftco-navbar-light .navbar-brand {
         color: #fff;
+        height: 40px;
+        left: 0px;
     }
 }
 
@@ -5676,12 +5673,12 @@ h5,
 }
 
 .ftco-navbar-light .navbar-nav>.nav-item>.nav-link {
-    font-size: 18px;
+    font-size: 23px;
     padding-top: 1.2rem;
     padding-bottom: 1.2rem;
     padding-left: 25px;
     padding-right: 25px;
-    color: rgba(255, 255, 255, 0.7);
+    color: white;
     font-weight: 400;
     font-family: "Patrick Hand", cursive;
     letter-spacing: 1px;
@@ -5705,17 +5702,18 @@ h5,
         padding-right: 10px;
         padding-bottom: 1rem;
         padding-top: 0;
-        color: #fff;
+        color: gold;
+        background-color: black;
     }
 }
 
 .ftco-navbar-light .navbar-nav>.nav-item>.nav-link.active {
-    color: #fff !important;
+    color: gold !important;
 }
 
 @media (max-width: 767.98px) {
     .ftco-navbar-light .navbar-nav>.nav-item.active>a {
-        color: #fff;
+        color: gold;
         background: transparent;
     }
 }
@@ -5728,12 +5726,16 @@ h5,
     text-transform: uppercase;
     font-size: 16px;
     letter-spacing: .1em;
+    position: absolute;
+    width: 150px;
+    right: 0%;
+    top: 70px;
 }
 
 .ftco-navbar-light .navbar-toggler:hover,
 .ftco-navbar-light .navbar-toggler:focus {
     text-decoration: none;
-    color: #d49a3a;
+    color: gold;
     outline: none !important;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -5753,7 +5755,7 @@ h5,
 .navbar-brand small,
 .navbar-brand .small {
     font-size: 30px;
-    color: #d49a3a;
+    color: gold;
 }
 
 @media (max-width: 575.98px) {
@@ -5782,7 +5784,17 @@ h5,
     background-position: center center;
     background-attachment: fixed;
     z-index: 0;
+    /* animation: changeBg 1s infinite;  */
 }
+
+/* @keyframes changeBg{
+    0%  {background-image: url('images/woman.jpg');}
+    25%  {background-image: url('images/fish.webp');}
+    50%  {background-image: url('images/girl1');}
+    70%  {background-image: url('images/child2.jpg');}
+    100%  {background-image: url('images/woman.jpg');} } */
+
+
 
 @media (max-width: 991.98px) {
     .hero-wrap {
@@ -5810,7 +5822,7 @@ h5,
     background: -webkit-linear-gradient(315deg, #0a4f53 0%, rgba(145, 129, 66, 0.1) 67%, rgba(212, 154, 58, 0.1) 100%);
     background: -o-linear-gradient(315deg, #0a4f53 0%, rgba(145, 129, 66, 0.1) 67%, rgba(212, 154, 58, 0.1) 100%);
     background: linear-gradient(135deg, #0a4f53 0%, rgba(145, 129, 66, 0.1) 67%, rgba(212, 154, 58, 0.1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a4f53', endColorstr='#d49a3a', GradientType=1);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a4f53', endColorstr='gold', GradientType=1);
     z-index: -1;
 }
 
@@ -5859,9 +5871,9 @@ h5,
 }
 
 .hero-wrap .slider-text .subheading {
-    font-weight: 400;
-    color: rgba(255, 255, 255, 0.9);
-    font-size: 18px;
+    font-weight: 200;
+    color: gold;
+    font-size: 40px;
     display: inline-block;
     margin-bottom: 5px;
     position: relative;
@@ -5870,16 +5882,16 @@ h5,
 
 .hero-wrap .slider-text h1,
 .hero-wrap .slider-text .h1 {
-    font-weight: 400;
+    font-weight: 200;
     color: #fff;
-    font-size: 80px;
+    font-size: 30px;
     line-height: 1.2;
     font-family: "Patrick Hand", cursive;
 }
 
 .hero-wrap .slider-text h1 span,
 .hero-wrap .slider-text .h1 span {
-    color: #d49a3a;
+    color: gold;
 }
 
 @media (max-width: 767.98px) {
@@ -5890,7 +5902,7 @@ h5,
 }
 
 .hero-wrap .slider-text .btn {
-    color: #fff;
+    color: gold;
 }
 
 @media (max-width: 575.98px) {
@@ -5925,12 +5937,12 @@ h5,
 
 .hero-wrap .slider-text .breadcrumbs span a:hover,
 .hero-wrap .slider-text .breadcrumbs span a:focus {
-    color: #d49a3a;
+    color: gold;
 }
 
 .hero-wrap .slider-text .breadcrumbs span a:hover i,
 .hero-wrap .slider-text .breadcrumbs span a:focus i {
-    color: #d49a3a;
+    color: gold;
 }
 
 .hero-wrap .slider-text .bread {
@@ -5972,24 +5984,24 @@ h5,
 }
 
 .btn.btn-primary {
-    background: #d49a3a !important;
-    border: 1px solid #d49a3a !important;
-    color: #fff !important;
+    background: gold !important;
+    border: 1px solid gold !important;
+    color: black  !important;
 }
 
 .btn.btn-primary span {
-    color: #fff !important;
+    color: black!important;
 }
 
 .btn.btn-primary:hover {
-    border: 1px solid #d49a3a;
-    background: transparent;
-    color: #d49a3a;
+    border: 1px white !important;
+    background: white !important;
+    color: black !important;
 }
 
 .btn.btn-secondary {
-    background: #0a686e !important;
-    border: 1px solid #0a686e !important;
+    background: goldenrod !important;
+    border: 1px solid goldenrod !important;
     color: #fff !important;
 }
 
@@ -5998,10 +6010,17 @@ h5,
 }
 
 .btn.btn-secondary:hover {
-    border: 1px solid #0a686e;
+    border: 1px solid gold;
     background: transparent;
-    color: #0a686e;
+    color: black;
 }
+.a.btn.btn-secondary:hover{
+    background-color: gold;
+    color: wheat;
+
+}
+
+
 
 .form-control {
     height: 45px;
@@ -6036,7 +6055,7 @@ h5,
 
 .form-control:focus,
 .form-control:active {
-    border-color: #d49a3a !important;
+    border-color: gold !important;
 }
 
 textarea.form-control {
@@ -6077,7 +6096,7 @@ textarea.form-control {
     width: 70px;
     height: 70px;
     position: relative;
-    background: #d49a3a;
+    background: gold;
     margin-bottom: 20px;
     border-radius: 0 50% 50% 50%;
 }
@@ -6107,7 +6126,7 @@ textarea.form-control {
 
 .services:hover,
 .services.active {
-    background: #d49a3a;
+    background: gold;
     -webkit-box-shadow: 0px 5px 25px -2px rgba(0, 0, 0, 0.18);
     -moz-box-shadow: 0px 5px 25px -2px rgba(0, 0, 0, 0.18);
     box-shadow: 0px 5px 25px -2px rgba(0, 0, 0, 0.18);
@@ -6120,7 +6139,7 @@ textarea.form-control {
 
 .services:hover .icon span,
 .services.active .icon span {
-    color: #d49a3a;
+    color: gold;
 }
 
 .services:hover .text,
@@ -6170,7 +6189,7 @@ textarea.form-control {
     width: 80px;
     height: 80px;
     position: relative;
-    background: #d49a3a;
+    background: gold;
     border-radius: 50%;
     margin: 0 auto;
     margin-bottom: 10px;
@@ -6205,11 +6224,11 @@ textarea.form-control {
 }
 
 .services-2:hover {
-    background: #0a686e;
+    background: gold;
 }
 
 .services-2:hover .icon {
-    background: #d49a3a;
+    background: goldenrod;
 }
 
 .services-2:hover .icon span {
@@ -6261,15 +6280,16 @@ textarea.form-control {
     width: 100%;
     padding: 0;
     position: relative;
-    background: #39311d;
+    background: purple;
     margin-top: -136px;
     border-radius: 10px;
+    height: 1025px;
 }
 
 .fund-raised {
     width: 100%;
     display: inline-block;
-    background: #0a686e;
+    background: black;
     padding: 20px 0 20px 50px;
     border-radius: 10px 10px 0 0;
     position: relative;
@@ -6283,7 +6303,7 @@ textarea.form-control {
 
 .fund-raised .icon span {
     line-height: 1.2;
-    color: #d49a3a;
+    color: gold;
     font-size: 80px;
 }
 
@@ -6301,7 +6321,7 @@ textarea.form-control {
 
 .fund-raised .text span {
     color: rgba(255, 255, 255, 0.8);
-    color: #d49a3a;
+    color: gold;
     text-transform: uppercase;
     font-size: 13px;
     font-weight: 600;
@@ -6328,7 +6348,7 @@ textarea.form-control {
     font-size: 12px;
     display: block;
     margin-bottom: 5px;
-    color: #d49a3a;
+    color: gold;
     text-transform: uppercase;
     font-weight: 500;
 }
@@ -6342,7 +6362,7 @@ textarea.form-control {
 
 .appointment .form-group label {
     font-size: 13px;
-    color: #d49a3a;
+    color: gold;
     font-weight: 400;
     margin-bottom: 10px;
 }
@@ -6351,7 +6371,7 @@ textarea.form-control {
     margin-bottom: 0;
     margin-left: 10px;
     margin-top: 1px;
-    color: rgba(255, 255, 255, 0.8);
+    color: white;
 }
 
 .appointment .form-group .icon {
@@ -6381,7 +6401,7 @@ textarea.form-control {
 
 .appointment .form-control {
     border: transparent;
-    background: rgba(255, 255, 255, 0.05) !important;
+    background: black!important;
     color: rgba(255, 255, 255, 0.7) !important;
     font-size: 14px;
     font-weight: 400;
@@ -6470,7 +6490,7 @@ textarea.form-control {
     color: #fff;
     font-size: 18px;
     display: inline-block;
-    background: #d49a3a;
+    background: goldenrod;
     padding: 2px 15px;
     border-radius: 40px;
     margin-bottom: -15px;
@@ -6518,7 +6538,7 @@ textarea.form-control {
 }
 
 .ftco-causes .causes-wrap .text .raised-goal span.goal strong {
-    color: #0a686e;
+    color: goldenrod;
 }
 
 .ftco-causes .causes-wrap:hover {
@@ -6527,7 +6547,7 @@ textarea.form-control {
 }
 
 .ftco-causes .causes-wrap:hover .progress-desc {
-    background: #d49a3a;
+    background: gold;
 }
 
 .ftco-causes .causes-wrap:hover .icon {
@@ -6556,12 +6576,12 @@ textarea.form-control {
 }
 
 .progress-bar {
-    background: #0a686e;
+    background: goldenrod;
     -webkit-box-shadow: none;
     box-shadow: none;
     font-size: 12px;
     line-height: 1.2;
-    color: #d49a3a;
+    color: gold;
     font-weight: 600;
     position: relative;
     overflow: visible;
@@ -6574,7 +6594,7 @@ textarea.form-control {
     position: absolute;
     color: #fff;
     font-weight: 400;
-    background: #0a686e;
+    background: goldenrod;
     padding: 2px;
 }
 
@@ -6587,7 +6607,7 @@ textarea.form-control {
     height: 0;
     border-style: solid;
     border-width: 3px 2px 0 2px;
-    border-color: #0a686e transparent transparent transparent;
+    border-color: goldenrod transparent transparent transparent;
 }
 
 .about-author .bio {
@@ -6647,7 +6667,7 @@ textarea.form-control {
 .ftco-footer .logo a small,
 .ftco-footer .logo a .small {
     font-size: 34px;
-    color: #d49a3a;
+    color: gold;
 }
 
 .ftco-footer .ftco-footer-widget h2,
@@ -6688,7 +6708,7 @@ textarea.form-control {
 
 .ftco-footer .block-23 ul li span {
     color: rgba(255, 255, 255, 0.9);
-    color: #d49a3a;
+    color: gold;
 }
 
 .ftco-footer .block-23 ul li .icon,
@@ -6774,7 +6794,7 @@ textarea.form-control {
     border-radius: 4px;
     position: relative;
     background: rgba(255, 255, 255, 0.2);
-    background: #d49a3a;
+    background: gold;
 }
 
 .ftco-footer-social li a span {
@@ -6822,10 +6842,10 @@ textarea.form-control {
 }
 
 .heading-section .subheading {
-    font-size: 14px;
+    font-size: 25px;
     display: block;
     margin-bottom: 5px;
-    color: #d49a3a;
+    color: gold;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -6840,7 +6860,7 @@ textarea.form-control {
 
 .heading-section h2 span,
 .heading-section .h2 span {
-    color: #d49a3a;
+    color: gold;
 }
 
 @media (max-width: 991.98px) {
@@ -6937,12 +6957,12 @@ textarea.form-control {
 
 .testimony-section .tns-nav>.tns-nav-active,
 .ftco-causes .tns-nav>.tns-nav-active {
-    background: #d49a3a;
+    background: gold;
 }
 
 .testimony-section .tns-item:not(.tns-slide-active)+.tns-slide-active+.tns-slide-active .testimony-wrap,
 .ftco-causes .tns-item:not(.tns-slide-active)+.tns-slide-active+.tns-slide-active .testimony-wrap {
-    background: #d49a3a;
+    background: gold;
     color: rgba(255, 255, 255, 0.9);
 }
 
@@ -6953,7 +6973,7 @@ textarea.form-control {
 
 .testimony-section .tns-item:not(.tns-slide-active)+.tns-slide-active+.tns-slide-active .testimony-wrap .icon span,
 .ftco-causes .tns-item:not(.tns-slide-active)+.tns-slide-active+.tns-slide-active .testimony-wrap .icon span {
-    color: #d49a3a;
+    color: gold;
 }
 
 .testimony-section .tns-item:not(.tns-slide-active)+.tns-slide-active+.tns-slide-active .testimony-wrap .name,
@@ -6981,7 +7001,7 @@ textarea.form-control {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background: #d49a3a;
+    background: gold;
 }
 
 .testimony-wrap .icon span {
@@ -6999,7 +7019,7 @@ textarea.form-control {
     font-weight: 500;
     font-size: 20px;
     margin-bottom: 0;
-    color: #d49a3a;
+    color: gold;
 }
 
 .testimony-wrap .position {
@@ -7169,7 +7189,7 @@ textarea.form-control {
 }
 
 .staff .text .position {
-    color: #d49a3a;
+    color: gold;
     display: block;
     font-weight: 500;
     font-size: 14px;
@@ -7196,14 +7216,14 @@ textarea.form-control {
 .staff .ftco-social li a {
     width: 34px;
     height: 34px;
-    background: #d49a3a;
+    background: gold;
     color: #fff;
     border-radius: 50%;
 }
 
 .staff:hover .text,
 .staff:focus .text {
-    background: #0a686e;
+    background: goldenrod;
     color: rgba(255, 255, 255, 0.8);
 }
 
@@ -7279,7 +7299,7 @@ textarea.form-control {
 .blog-entry .text .heading a:hover,
 .blog-entry .text .heading a:focus,
 .blog-entry .text .heading a:active {
-    color: #d49a3a;
+    color: gold;
 }
 
 .blog-entry .meta {
@@ -7297,7 +7317,7 @@ textarea.form-control {
 }
 
 .blog-entry .meta span i {
-    color: #d49a3a;
+    color: gold;
 }
 
 .blog-single h2,
@@ -7334,7 +7354,7 @@ textarea.form-control {
 .block-27 ul li.active span,
 .block-27 ul li:hover a,
 .block-27 ul li:hover span {
-    background: #d49a3a;
+    background: gold;
     color: #fff;
 }
 
@@ -7349,7 +7369,7 @@ textarea.form-control {
 }
 
 .wrapper .social-media p a {
-    color: #d49a3a;
+    color: gold;
     text-transform: uppercase;
     font-size: 13px;
     font-weight: 600;
@@ -7396,7 +7416,7 @@ textarea.form-control {
 }
 
 .dbox p a {
-    color: #d49a3a;
+    color: gold;
 }
 
 .dbox .text {
@@ -7404,7 +7424,7 @@ textarea.form-control {
 }
 
 .contactForm .label {
-    color: #d49a3a;
+    color: gold;
     text-transform: uppercase;
     font-size: 12px;
     font-weight: 600;
@@ -7442,7 +7462,7 @@ textarea.form-control {
 .block-21 .text .heading a:hover,
 .block-21 .text .heading a:active,
 .block-21 .text .heading a:focus {
-    color: #d49a3a;
+    color: gold;
 }
 
 .block-21 .text .meta>div {
@@ -7453,7 +7473,7 @@ textarea.form-control {
 
 .block-21 .text .meta>div a {
     color: gray;
-    color: #d49a3a;
+    color: gold;
 }
 
 /* Blog*/
@@ -7524,7 +7544,7 @@ textarea.form-control {
 
 .comment-form-wrap .form-control:focus,
 .comment-form-wrap .form-control:active {
-    border-color: #d49a3a !important;
+    border-color: gold !important;
 }
 
 .comment-form-wrap textarea.form-control {
@@ -7586,13 +7606,13 @@ textarea.form-control {
 .comment-list li .comment-body .reply {
     padding: 5px 10px;
     background: #e6e6e6;
-    color: #fff;
+    color: black;
     text-transform: uppercase;
     font-size: 11px;
     letter-spacing: .1em;
     font-weight: 600;
     border-radius: 4px;
-    background: #0a686e;
+    background: gold;
 }
 
 .comment-list li .comment-body .reply:hover {
@@ -7617,7 +7637,7 @@ textarea.form-control {
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    color: #d49a3a;
+    color: gold;
 }
 
 .sidebar-box {
@@ -7667,7 +7687,7 @@ textarea.form-control {
     position: absolute;
     left: 0;
     top: 0;
-    color: #d49a3a;
+    color: gold;
 }
 
 .categories li.active a {
