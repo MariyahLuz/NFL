@@ -6654,7 +6654,7 @@ textarea.form-control {
     position: relative;
     z-index: 0;
     color: rgba(255, 255, 255, 0.9);
-    background: #042628;
+    background: purple;
 }
 
 .ftco-footer .logo a {
@@ -6672,7 +6672,7 @@ textarea.form-control {
 
 .ftco-footer .ftco-footer-widget h2,
 .ftco-footer .ftco-footer-widget .h2 {
-    color: #fff;
+    color: gold;
     margin-bottom: 40px;
     font-size: 18px;
     font-weight: 500;
@@ -6726,7 +6726,7 @@ textarea.form-control {
 }
 
 .ftco-footer .bg-darken {
-    background: #053336 !important;
+    background: goldenrod !important;
 }
 
 .ftco-footer .bg-darken p a {
