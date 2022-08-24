@@ -1,5 +1,16 @@
 @charset "UTF-8";
 
+/* .dropmenu {
+    background-color: white;
+    min-width: 100%;
+    display: none;
+    position: absolute;
+    z-index: 999;
+    left: 0%; */
+}
+
+
+
 @-webkit-keyframes bounce {
     from,
     to {
@@ -4745,6 +4756,11 @@ textarea.form-control {
     padding-left: 0;
 }
 
+a:hover{
+    color: gold;
+
+}
+
 .navbar-nav .dropdown-menu {
     position: static;
 }
@@ -5656,7 +5672,7 @@ h5,
 
 @media (max-width: 767.98px) {
     .ftco-navbar-light .navbar-nav {
-        padding-top: 20px;
+        padding-top: 80px;
         padding-bottom: 20px;
         margin-right: 0;
     }
@@ -5703,12 +5719,16 @@ h5,
         padding-bottom: 1rem;
         padding-top: 0;
         color: gold;
-        background-color: black;
+        background-color: goldenrod;
     }
 }
 
 .ftco-navbar-light .navbar-nav>.nav-item>.nav-link.active {
     color: gold !important;
+}
+.ftco-navbar-light .navbar-nav>.nav-item>.nav-link:hover{
+    color: gold !important;
+    display: block;
 }
 
 @media (max-width: 767.98px) {
