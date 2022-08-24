@@ -5976,7 +5976,7 @@ h5,
 }
 
 .bg-light {
-    background: #efebe5 !important;
+    background: goldenrod !important;
 }
 
 .bg-darken {
@@ -7430,7 +7430,7 @@ textarea.form-control {
     font-weight: 400;
     color: #39311d;
     display: block;
-    text-transform: uppercase;
+    text-transform: none;
     font-size: 13px;
     font-weight: 700;
 }
