@@ -30,7 +30,7 @@ class CugMail
 
     public function from(...$sender)
     {
-        $this->mailer->setFrom(env('mail', 'user'), "Guru Tourism");
+        $this->mailer->setFrom(env('mail', 'user'), "NAKIMULI FOUNDATION");
         if(!empty($sender))
         {
             $this->mailer->setFrom($sender[0],$sender[1]);
