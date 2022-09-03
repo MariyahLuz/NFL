@@ -203,8 +203,8 @@
                             </a>
                         </div>
                         <div class="col-md-6">
-                            <a href="./donate.php?pay=flutter" class="btn btn-warning">
-                                Donate with Flutterwave?
+                            <a href="./donate.php?pay=mobile" class="btn btn-warning">
+                                Donate with Mobile Money?
                             </a>
                         </div>
                     </div>
