@@ -1,9 +1,11 @@
+app:
+  db: "donation"
+  user: "root"
+  host: "localhost"
+  pass: "password"
 
-<<<<<<< HEAD
 mail:
   port: 465
   user: "info@nakimulifoundation.org"
   host: "server1.thinkxcloud.com"
   pass: "RfG9REST4KfzXvp"
-=======
->>>>>>> 10fb6a6635a30d6d0ea95b6fbf38353f6d42eec3

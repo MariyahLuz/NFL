@@ -57,23 +57,26 @@
                                         </div>
                                     </div>
                                 </div>
-                                <?php if($_GET['pay'] == 'flutter'): ?>
+                                <?php if($_GET['pay'] == 'mobile'): ?>
                                     <a href="./donate.php?pay=paypal" class="btn btn-info w-100" disabled>
-                                        Payment option still in developement. Donate with PayPal?
+                                        This Payment option is still in developement. Donate with PayPal?
                                     </a>
                                 
                                 <?php endif ?>
                             </div>
                         </form>
                         <?php if($_GET['pay'] == 'paypal'): ?>
-                            <div style="text-align: center"><label for="description">Full Name </label><input type="text" name="descriptionInput" id="description" maxlength="127" value="" class="form-control"></div>
-                                <p id="descriptionError" style="visibility: hidden; color:red; text-align: center;">Please enter your full name</p>
-                                <div style="text-align: center"><label for="amount">Amount to Donate </label><input name="amountInput" type="number" id="amount" value="" class="form-control"><span> USD</span></div>
-                                <p id="priceLabelError" style="visibility: hidden; color:red; text-align: center;">Please enter a price</p>
-                                <div id="invoiceidDiv" style="text-align: center; display: none;"><label for="invoiceid"> </label><input name="invoiceid" maxlength="127" type="text" id="invoiceid" value="" ></div>
-                                <p id="invoiceidError" style="visibility: hidden; color:red; text-align: center;">Please enter an Invoice ID</p>
+                            <hr/>
+                            <div class="d-flex justify-content-even"><label for="description" class="w-25">Full Name </label><input type="text" name="descriptionInput" id="description" maxlength="127" value="" class="form-control w-75"></div>
+                            <p id="descriptionError" style="visibility: hidden; color:red; text-align: center;">Please enter your full name</p>
+
+                            <div class="d-flex justify-content-even"><label for="amount" class="w-25">Amount ( <span> USD</span>) </label><input name="amountInput" type="number" id="amount" value="" class="form-control w-75"></div>
+                            <p id="priceLabelError" style="visibility: hidden; color:red; text-align: center;">Please enter amount to donate</p>
+
+                            <div id="invoiceidDiv" style="text-align: center; display: none;"><label for="invoiceid"> </label><input name="invoiceid" maxlength="127" type="text" id="invoiceid" value="" ></div>
+                            <p id="invoiceidError" style="visibility: hidden; color:red; text-align: center;">Please enter an Invoice ID</p>
+
                                 <div style="text-align: center; margin-top: 0.625rem;" id="paypal-button-container"></div>
-                            </div>
                             <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
                             <script>
                                 function initPayPalButton() {
