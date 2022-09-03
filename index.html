@@ -60,8 +60,8 @@
                 </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-<span class="fa fa-bars"></span>MENU
-</button>
+            <span class="fa fa-bars"></span>MENU
+            </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
@@ -90,7 +90,7 @@
     </section>
     <section class="ftco-intro-wrap">
         <div class="container-xl">
-            <div class="row g-lg-5">
+            <div class="row">
                 <div class="col-md-5 order-lg-last d-flex align-items-stretch">
                     <div class="fund-wrap">
                         <div class="fund-raised d-flex align-items-center">
@@ -101,65 +101,24 @@
                                 <span>Empowerment, A Better Environment, Improved Standards of Living</span>
                             </div>
                         </div>
-                        <form action="#" class="appointment">
+                        <form action="./donate.php" class="appointment">
                             <span class="subheading">Donate Now</span>
                             <h2 class="mb-4 appointment-head">Giving is the greatest act of Kindness</h2>
                             <div class="row">
                                 <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label for="name">Your Full Name</label>
-                                        <input type="text" class="form-control" placeholder="Your Full Name">
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label for="email">Email Address</label>
-                                        <input type="text" class="form-control" placeholder="Email">
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label for="subject">Select Cause</label>
-                                        <div class="form-field">
-                                            <div class="select-wrap">
-                                                <div class="icon"><span class="fa fa-chevron-down"></span></div>
-                                                <select id="formSelect" title ="fa" name ="form"class="form-control">
-<option >Food</option>
-<option >Medical Health</option>
-<option >Education</option>
-<option >Vulnerables</option>
-<option >Tourism enhancement</option>
-<option >Financial Inclusion</option>
-<option >Environmental Sustainability</option>
-<option >Community Health and sanitation</option>
-<option >Women Empowerment Programmes</option>
-<option >Youth Transformation Programmes</option>
-<option >Other</option>
-</select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label for="amount">Amount to Give</label>
-                                        <input type="text" class="form-control" placeholder="Amount">
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
                                     <div class="form-group d-flex">
                                         <div class="form-check d-flex">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                            <label class="form-check-label" for="flexRadioDefault1">Paypal</label>
+                                            <input class="form-check-input" type="radio" name="pay" id="flexRadioDefault1" value="paypal">
+                                            <label class="form-check-label" for="pay">Paypal</label>
                                         </div>
                                         <div class="form-check d-flex ms-3">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                                            <label class="form-check-label" for="flexRadioDefault2">Flutterwave Payment</label>
+                                            <input class="form-check-input" type="radio" name="pay" id="flexRadioDefault2" value="flutter">
+                                            <label class="form-check-label" for="pay">Flutterwave Payment</label>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
-                                    <input type="submit" value="Donate Now" class="btn btn-primary py-3 px-4 rounded">
+                                    <button type="submit" class="btn btn-primary py-3 px-4 rounded">Donate Now</button>
                                 </div>
                             </div>
                         </form>
