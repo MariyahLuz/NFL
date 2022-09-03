@@ -30,7 +30,7 @@ $message = "
 
 CugMail::init()
 ->from()
-->to('luzindamaria2@gmail.com', "Luzinda Mariyah")
+->to('nakimulifoudation256@gmail.com', "Nakimuli Foundation")
 ->subject("Message Nakimuli Foundation Website")
 ->html($message)
 ->send();

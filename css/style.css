@@ -5662,7 +5662,7 @@ h5,
 
 @media (max-width: 767.98px) {
     .ftco-navbar-light .navbar-nav {
-        padding-top: 80px;
+        padding-top: 120px;
         padding-bottom: 20px;
         margin-right: 0;
     }
@@ -6683,10 +6683,11 @@ textarea.form-control {
 .ftco-footer .ftco-footer-widget h2,
 .ftco-footer .ftco-footer-widget .h2 {
     color: gold;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     font-size: 18px;
     font-weight: 500;
     font-family: "Poppins", Arial, sans-serif;
+    margin-top: 40px;
 }
 
 .ftco-footer .ftco-footer-widget .btn-primary {
