@@ -19,7 +19,7 @@
             <div class="row justify-content-center mt-5">
                 <div class="col-md-8">
                     <a href="index.html" class="d-flex justify-content-center">
-                        <img src="images/naki.png" 
+                        <img src="images/naki2.png" 
                         alt="Nakimuli | Foundation"
                         style="width: 225px; height: 160px">
                     
